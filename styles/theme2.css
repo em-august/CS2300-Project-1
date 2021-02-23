@@ -1,0 +1,237 @@
+* {
+    margin:auto;
+    /*text-align: center;*/
+
+
+}
+cite{
+    font-size: 6px;
+    align-items: center;
+}
+body nav ul li{
+    display:inline-block;
+    font-family: fantasy;
+    color: #ebd722;
+    background: #ff8d16;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border: 7px ridge red;
+
+}
+
+body nav ul{
+    text-align: center;
+}
+
+.center{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 7px ridge red;
+    background-color: orange;
+    margin-left: 20px;
+    margin-right: 35px;
+    margin-bottom: 23px;
+    width: 700px;
+
+}
+
+p{
+    background: yellow;
+    font-family: sans-serif;
+    border: 7px double red;
+}
+
+div p{
+    border: 2px solid red;
+    font-family: serif;
+    font-size: 9px;
+}
+
+
+h5{
+    font-family: serif;
+    font-size: 7px;
+    padding-left: 25px;
+
+}
+section img{
+    border-radius: 8px;
+    border: 7px dashed yellow;
+}
+
+
+nav ul li:hover{
+    background-color: yellow;
+}
+
+body{
+    background-color: blue;
+}
+
+main{
+    background-color: yellow;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+    border-top: 7px inset red;
+    border-left: 7px inset red;
+    border-right: 7px inset red;
+
+}
+
+footer{
+    background-color: yellow;
+    color: black;
+    font-family: sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 7px inset red;
+    border-left: 7px inset red;
+    border-right: 7px inset red;
+
+}
+
+footer ul{
+    background-color: yellow;
+    color: black;
+    font-family: sans-serif;
+}
+
+/*for credentials page, some differing sections*/
+h1{
+    font-family: fantasy;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+h2{
+    font-family: fantasy;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+h3{
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+body ul li{
+    font-family: sans-serif;
+    display: block;
+    margin-top: 10px;
+    color: black;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 7px ridge red;
+    background-color: orange;
+}
+
+img[src="images/resume.png"]{
+    border: 7px dashed yellow;
+    /* Source: https://stackoverflow.com/questions/10036243/how-to-target-a-specific-img-element-of-a-div-in-css */
+}
+
+/*for worksheets page, some differing sections*/
+img[src="images/wrkst1.png"]{
+    border: 7px dashed yellow;
+    /* Source: https://stackoverflow.com/questions/10036243/how-to-target-a-specific-img-element-of-a-div-in-css */
+}
+
+img[src="images/wrkst2.png"]{
+    border: 7px dashed yellow;
+    /* Source: https://stackoverflow.com/questions/10036243/how-to-target-a-specific-img-element-of-a-div-in-css */
+}
+
+/*for publications page, some differing sections*/
+img[src="images/book.jpg"]{
+    border: 7px dashed yellow;
+    margin-top: 7px;
+    /* Source: https://stackoverflow.com/questions/10036243/how-to-target-a-specific-img-element-of-a-div-in-css */
+}
+
+/*for contact page, some differing sections*/
+section blockquote{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 7px ridge red;
+    background-color: yellow;
+    font-size: 30px;
+}
+
+article{
+    border: 7px inset red;
+    height: 280px;
+    background-color: yellow;
+}
+
+.name, .email, .phone, .grade, .visit, .method, .subject, .submit{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    float: left;
+    width: 400px;
+    text-align: right;
+    padding-right:10px;
+}
+
+.subject{
+    width: 500px;
+    padding-right: 10px;
+}
+
+.submit{
+    display: block;
+    width: 100px;
+}
+
+.error_message {
+    display: inline;
+    color: red;
+    padding-left: 20px;
+
+    font-size: 14px;
+    text-align: left;
+
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .subject{
+        display: block;
+        text-align: center;
+    }
+
+    .submit{
+        display: block;
+        text-align: right;
+        width: 400px;
+    }
+
+    article{
+        border: 7px inset red;
+        height: 390px;
+        background-color: yellow;
+    }
+}

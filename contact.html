@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Emily's Credentials</title>
+        <link href="styles/theme2.css" type="text/css" rel="stylesheet"/>
+        <script src="www/scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+        <script src= "www/scripts/tutor-validation.js"></script>
+    </head>
+
+    <body>
+        <h1>Contact Information and Rates</h1>
+        <nav>
+            <ul>
+                <li><a href ="index.html">Home</a></li>
+                <li><a href ="credentials.html">Credentials</a></li>
+                <li><a href ="worksheets.html">Worksheets</a></li>
+                <li><a href ="publications.html">Publications</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <blockquote><strong>Hourly Rate: </strong>$1,000,000</blockquote>
+            <blockquote><strong>Phone: </strong> 867-5309</blockquote>
+            <blockquote><strong>Email: </strong> somerandomemail@gmail.com</blockquote>
+        </section>
+
+        <!-- Source: https://www.tumblr.com/search/pink%20crayola%20crayon-->
+        <img src="images/crayon.png" alt="Orange Crayola Crayon" class= "center"/>
+        Source: <cite><a href="https://www.tumblr.com/search/pink%20crayola%20crayon">tumblr</a></cite>
+
+        <h1>Thank you! I hope to hear from you!</h1>
+        <h2>-Emily</h2>
+
+        <article>
+            <h3>Let's Set up a First Meeting!</h3>
+            <h5>* denotes that this is a required field</h5>
+
+            <form id="meetingForm" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2019fa/submit.php" novalidate>
+
+            <div class="name">
+                <label for="name">Name:* </label>
+                <input type="text" name="name" id="name" size="20" required/>
+                <span class="error_message hidden" id="name_error">
+                    Please type a valid name with at least one character.
+                </span>
+            </div>
+
+            <div class="email">
+                <label for="email">Email:* </label>
+                <input type="text" name="email" id="email" size="20" required ="required"/>
+                <span class="error_message hidden" id="email_error">
+                    Please type a valid email.
+                </span>
+            </div>
+
+            <div class="phone">
+                <label for="phone">Phone Number: </label>
+                <input type="tel" name="phone" id="phone" size="23">
+            </div>
+
+            <div class="method">
+                <label for="method">Which method of <br>contact do you prefer: </label>
+
+                <div>
+                    <input type="radio" name="method" id="method" value ="Email" required="required" checked/>Email
+                </div>
+                <div>
+                    <input type="radio" name="method" value= "Phone" required="required"/>Phone
+                </div>
+            </div>
+
+            <div class="grade">
+                <label for="grade">
+                    Grade-level of Student:* </label>
+                    <p>Grade 0 is Kindergarten <br> and Grade 12 is the max</p>
+                    <input type="number" name="grade" id="grade" max= "12" min="0" required ="required">
+                    <span class="error_message hidden" id="grade_error">
+                        Please select a grade level for the prospective student. The number 0 denotes Kindergarten.
+                    </span>
+            </div>
+
+            <div class="subject">
+                <label for="subject">
+                    Subjects interested in:*
+                </label><br>
+                <span class="error_message hidden" id="subject_error">
+                    Please select one of the subjects the prospective student may need tutoring in.
+                </span>
+                <div>
+                <input type="checkbox" name="subject" id="subject" value="Math"> Math
+            </div>
+                <div>
+                    <input type="checkbox" name="subject2" id="subject2" value="Science">Science
+                </div>
+                <div>
+                    <input type="checkbox"
+                    name="subject3" id="subject3" value="English">English
+                </div>
+                <div>
+                    <input type="checkbox" name="subject4" id="subject4" value="History">History
+                </div>
+            </div>
+
+            <div class="visit">
+                <label for="visit">Tentative Date of First Session:* </label>
+                <span class="error_message hidden" id="date_error">
+                    Please input a tentative date. This date can be changed.
+                </span>
+                <input type="date" name="visit" id="visit">
+            </div>
+                <br>
+            <div class="submit">
+                <input type="submit" value="Submit"/>
+            </div>
+
+
+        </form>
+    </article>
+    </body>
+</html>
